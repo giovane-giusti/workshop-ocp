@@ -1,4 +1,4 @@
-node('maven') {
+ node('maven') {
     stage('build') {
         echo 'building app :)'
         openshiftBuild(buildConfig: 'workshop-ocp', showBuildLogs: 'true')
